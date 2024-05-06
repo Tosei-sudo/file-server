@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+</head>
+
+<body>
+    <main ng-controller="MainController as mainCtrl">
+        <h1>{{mainCtrl.title}}</h1>
+
+        <form ng-submit="mainCtrl.submit()">
+            <input type="file" id="file_selector" accept="image/*" required>
+            <button type="submit">Add</button>
+        </form>
+    </main>
+</body>
+<!-- cdn jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- cdn anguler -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="./script.js"></script>
+
+</html>
